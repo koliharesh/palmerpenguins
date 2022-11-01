@@ -178,6 +178,7 @@ ggplot(penguins, aes(x = flipper_length_mm,
        color = "Penguin sex") +
   theme(legend.position = "bottom",
         plot.title.position = "plot",
+        panel.grid.major=element_line(color='black)'
         plot.caption = element_text(hjust = 0, face= "italic"),
         plot.caption.position = "plot") +
   facet_wrap(~species)
